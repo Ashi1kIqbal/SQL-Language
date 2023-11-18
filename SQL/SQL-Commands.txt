@@ -49,7 +49,7 @@ Performing SQL Command
 4.SELECT Name,Age,Charger FROM `hospital` WHERE Sex = 'M'
 5.SELECT * FROM `hospital` WHERE Age < 20
 6.SELECT Name FROM `hospital` WHERE Name LIKE 'S%'
-7.
-8.
-9.
-10.
+7.SELECT * FROM `employeeinfo` ORDER BY EmpFname DESC , Department ASC
+8.SELECT EmpLname FROM `employeeinfo` WHERE EmpLname LIKE '%a'
+9.SELECT * WHERE Address = 'Delhi (DEL)'
+10.SELECT EmpPosition , Salary FROM `employeeposition` WHERE Salary  BETWEEN '50000' AND '1000000'
