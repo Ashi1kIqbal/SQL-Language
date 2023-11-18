@@ -1,0 +1,55 @@
+CREATE TABLE Hospital(
+	Name varchar (20),
+    Age varchar(10),
+    Department varchar(20),
+    Charger varchar(10),
+    Sex varchar(10));
+    
+    INSERT INTO `hospital`(`Name`, `Age`, `Department`, `Dateofadm`, `Charger`, `Sex`) VALUES ('Sandeep','65','Surgery','23.02.98','300','M');
+INSERT INTO `hospital`(`Name`, `Age`, `Department`, `Dateofadm`, `Charger`, `Sex`) VALUES ('Ravina','24','Orthopedic','20.01.98','200','F');
+INSERT INTO `hospital`(`Name`, `Age`, `Department`, `Dateofadm`, `Charger`, `Sex`) VALUES ('karan','45','Orthopedic','19.02.98','200','M');
+INSERT INTO `hospital`(`Name`, `Age`, `Department`, `Dateofadm`, `Charger`, `Sex`) VALUES ('Tarun','12','Surgery','01.01.98','300','M');
+INSERT INTO `hospital`(`Name`, `Age`, `Department`, `Dateofadm`, `Charger`, `Sex`) VALUES ('Zubin','36','ENT','12.02.98','250','M');
+INSERT INTO `hospital`(`Name`, `Age`, `Department`, `Dateofadm`, `Charger`, `Sex`) VALUES ('Ketaki','16','ENT','24.02.98','300','F');
+INSERT INTO `hospital`(`Name`, `Age`, `Department`, `Dateofadm`, `Charger`, `Sex`) VALUES ('Anika','29','Cardiology','20.02.98','800','F');
+INSERT INTO `hospital`(`Name`, `Age`, `Department`, `Dateofadm`, `Charger`, `Sex`) VALUES ('Zareen','45','Gynecology','22.02.98','300','F');
+INSERT INTO `hospital`(`Name`, `Age`, `Department`, `Dateofadm`, `Charger`, `Sex`) VALUES ('Kush','19','Cardiology','13.01.98','800','M');
+INSERT INTO `hospital`(`Name`, `Age`, `Department`, `Dateofadm`, `Charger`, `Sex`) VALUES ('Shallya','31','Nuclear Medicine','19.02.98','400','M');
+
+
+Create Employee list
+Employee
+
+INSERT INTO `employeeposition`(`EmpID`, `EmpPosition`, `DateOfjoining`, `Salary`) VALUES ('1','Manager','01/05/2022','500000');
+INSERT INTO `employeeposition`(`EmpID`, `EmpPosition`, `DateOfjoining`, `Salary`) VALUES ('2','Executive','02/05/2022','75000');
+INSERT INTO `employeeposition`(`EmpID`, `EmpPosition`, `DateOfjoining`, `Salary`) VALUES ('3','Manager','01/05/2022','90000');
+INSERT INTO `employeeposition`(`EmpID`, `EmpPosition`, `DateOfjoining`, `Salary`) VALUES ('2','Lead','02/05/2022','85000');
+INSERT INTO `employeeposition`(`EmpID`, `EmpPosition`, `DateOfjoining`, `Salary`) VALUES ('1','Executive','01/05/2022','300000');
+
+
+EmployeeInfo
+
+CREATE TABLE Employeeinfo(
+	EmpID int,
+    EmpFname varchar (20),
+    EmpLname varchar(20),
+    Department varchar(20),
+    Project varchar (10),
+    Address varchar(20),
+    DOB varchar(20),
+	Gender varchar(1)
+);
+
+
+Performing SQL Command
+
+1.SELECT * FROM `hospital` WHERE Department = 'Cardiology'
+2.SELECT Name , Department, Sex FROM `hospital` WHERE Department='Orthopedic' AND Sex = 'F'
+3.SELECT Name, Dateofadm FROM `hospital` ORDER BY Dateofadm ASC
+4.SELECT Name,Age,Charger FROM `hospital` WHERE Sex = 'M'
+5.SELECT * FROM `hospital` WHERE Age < 20
+6.SELECT Name FROM `hospital` WHERE Name LIKE 'S%'
+7.
+8.
+9.
+10.
